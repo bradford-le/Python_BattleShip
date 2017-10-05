@@ -16,7 +16,15 @@ def random_row(board_in):
 def random_col(board_in):
   return randint(0,len(board_in)-1)
 
+ship_row = random_row(board)
+ship_col = random_col(board)
+
 print_board(board)
 
-print "random row: " + str(random_row(board))
-print "random column: " + str(random_col(board))
+print "Ship Row: " + str(ship_row)
+print "Ship Column: " + str(ship_col)
+
+# Add your code below!
+guess_row = int(raw_input("Guess Row: "))
+
+guess_col = int(raw_input("Guess Col: "))
